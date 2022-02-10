@@ -7,4 +7,8 @@ A sample express application to showcase SQL injection attacks
 
 To run the project:
 
-```npm run start```
+```cmd
+npm install
+
+npm run start
+```
