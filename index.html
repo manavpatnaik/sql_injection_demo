@@ -10,6 +10,38 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .container {
+            max-width: 1140px;
+            margin: 50px auto;
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: 0.5px solid grey;
+            padding: 20px;
+            max-width: 60%;
+            margin: 0px auto;
+        }
+        .form-control {
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .search-box button {
+            padding: 5px 10px;
+            margin: 20px;
+            border: none;
+            color: white;
+            background-color: rgb(231, 33, 73);
+            border-radius: 3px;
         }
     </style>
 </head>
@@ -18,8 +50,17 @@
         <div class="title">
             <h1>Products Search</h1>
         </div>
-        <div class="search-box"></div>
-        <div class="result-box"></div>
+        <div class="search-box">
+            <form>
+                <label for="keyword">Enter search keyword: </label>
+                <input type="text" id="keyword" class="form-control">
+                <br/>
+                <button>Search</button>
+            </form>
+        </div>
+        <div class="result-box">
+            
+        </div>
     </div>
 </body>
 </html>
